@@ -1,11 +1,9 @@
 /** @type {import('tailwindcss').Config} */
+
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      backgroundImage: {
-        blur: "url(/src/assets/featured-image.png)",
-      },
       colors: {
         green: {
           500: "#4fff4b",

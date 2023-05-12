@@ -2,6 +2,13 @@ import Header from "../components/Header";
 import Notice from "../components/Notice";
 import Footer from "../components/Footer";
 
+import Arrow from "../assets/arrow-right.svg";
+import Featured from "../assets/featured-image.png";
+import Post1 from "../assets/post-1.png";
+import Post2 from "../assets/post-2.png";
+import Post3 from "../assets/post-3.png";
+import Post4 from "../assets/post-4.png";
+
 const Home = () => {
   return (
     <div className="w-full h-full">
@@ -27,16 +34,16 @@ const Home = () => {
                 Veja mais
               </span>
               <img
-                src="src/assets/arrow-right.svg"
-                alt="Ver mais"
+                src={Arrow}
+                alt="Seta para ver mais"
               />
             </a>
           </div>
 
           <div className="w-full flex flex-1 mb-16  lg:justify-center">
             <img
-              src="src/assets/featured-image.png"
-              alt=""
+              src={Featured}
+              alt="Tela de um notebook"
               className="object-cover rounded-xl"
             />
           </div>
@@ -47,8 +54,8 @@ const Home = () => {
         <div className="flex items-start  gap-32 py-16 md:flex-col">
           <div>
             <img
-              src="src/assets/post-1.png"
-              alt=""
+              src={Post1}
+              alt="Notebook na mesa"
               className="w-full object-cover mb-2"
             />
             <Notice title="Começando no ReactJS em 2022" />
@@ -64,24 +71,24 @@ const Home = () => {
         <div className="flex items-center justify-between gap-7 pb-6 md:flex-col">
           <div>
             <img
-              src="src/assets/post-2.png"
-              alt=""
+              src={Post2}
+              alt="Uma pessoa programando"
               className="w-full object-cover mb-2"
             />
             <Notice title="10 dicas para conseguir a vaga desejada" />
           </div>
           <div>
             <img
-              src="src/assets/post-3.png"
-              alt=""
+              src={Post3}
+              alt="Código de programação em uma tela"
               className="w-full object-cover mb-2"
             />
             <Notice title="Deixe seu código mais semântico com essas dicas" />
           </div>
           <div>
             <img
-              src="src/assets/post-4.png"
-              alt=""
+              src={Post4}
+              alt="Um celular na mão"
               className="w-full object-cover mb-2"
             />
             <Notice title="Use essas dicas nas suas aplicações mobile" />
